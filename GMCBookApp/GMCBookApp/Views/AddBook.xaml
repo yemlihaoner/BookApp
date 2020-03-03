@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage NavigationPage.HasNavigationBar="false"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GMCBookApp"
+             x:Class="GMCBookApp.AddBook">
+
+
+
+    <StackLayout HorizontalOptions="Fill" 
+                 Spacing="0"
+                 Padding="0"
+                 Margin="0"
+                 BackgroundColor="Wheat" 
+                 VerticalOptions="Fill"
+                 Orientation="Vertical">
+        <Frame 
+            Margin="8"
+            Padding="0"
+            BackgroundColor="White"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"            
+            CornerRadius="8"
+            HasShadow="True">
+            <StackLayout 
+                     Padding="0" 
+                     VerticalOptions="FillAndExpand">
+                <!-- Place new controls here -->
+                <ImageButton                         
+                    Clicked="BackButton_Clicked"
+                    Margin="6,6,6,20"
+                    Padding="3"
+                    CornerRadius="30" 
+                    Source="back"
+                    BackgroundColor="Black"
+                    WidthRequest="{OnPlatform iOS=48, Android=40}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start">
+                </ImageButton>
+                <Frame
+                    Margin="10,10,10,4"
+                    Padding="22,0,22,0"
+                    BorderColor="Black"
+                    BackgroundColor="Transparent" 
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Fill"            
+                    CornerRadius="25"
+                    HasShadow="True">
+                    <Entry 
+                        Placeholder="Enter writer name"
+                        x:Name="writerName"></Entry>
+                </Frame>
+                <Frame
+                    Margin="10,4,10,4"
+                    Padding="22,0,22,0"
+                    BorderColor="Black"
+                    BackgroundColor="Transparent" 
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Fill"            
+                    CornerRadius="25"
+                    HasShadow="True">
+                    <Entry 
+                        Placeholder="Enter book name"
+                        x:Name="bookName"></Entry>
+                </Frame>
+                <Frame
+                    Margin="10,4,10,4"
+                    Padding="22,0,22,0"
+                    BorderColor="Black"
+                    BackgroundColor="Transparent" 
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Fill"            
+                    CornerRadius="25"
+                    HasShadow="True">
+                    <Entry
+                        Keyboard="Numeric"
+                        Placeholder="Year published"
+                        x:Name="yearPublished"></Entry>
+                </Frame>
+                <Frame
+                    Margin="10,4,10,4"
+                    Padding="22,0,22,0"
+                    BorderColor="Black"
+                    BackgroundColor="Transparent" 
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Fill"            
+                    CornerRadius="25"
+                    HasShadow="True">
+                    <Entry 
+                        Keyboard="Numeric"
+                        Placeholder="Price"
+                        x:Name="priceOfBook"></Entry>
+                </Frame>
+                
+                <Frame
+                    Margin="20,5,20,7"
+                    Padding="22,-2,22,-2"
+                    BorderColor="Black"
+                    BackgroundColor="LightGray" 
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Fill"            
+                    CornerRadius="25"
+                    HasShadow="True">
+                    <Button TextColor="White" BackgroundColor="Transparent" Text="Import PDF" Clicked="PDFImport_Clicked"></Button>
+                </Frame>
+                <Label TextColor="Black" HorizontalOptions="Center" Text="Or create pdf"></Label>
+
+                <StackLayout Margin="0" Padding="0" Orientation="Horizontal">
+                    <Frame
+                    Margin="10,7,3,5"
+                    Padding="22,-2,22,-2"
+                    BorderColor="Black"
+                    BackgroundColor="LightGray" 
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Fill"            
+                    CornerRadius="25"
+                    HasShadow="True">
+
+                        <Button TextColor="White" BackgroundColor="Transparent" Text="via Images" Clicked="PDFCreateviaGalery_Clicked"></Button>
+                    </Frame>
+                    <Frame
+                    Margin="3,7,10,5"
+                    Padding="22,-2,22,-2"
+                    BorderColor="Black"
+                    BackgroundColor="LightGray" 
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Fill"            
+                    CornerRadius="25"
+                    HasShadow="True">
+                        <Button TextColor="White" BackgroundColor="Transparent" Text="via Camera" Clicked="PDFCreateviaCamera_Clicked"></Button>
+                    </Frame>
+
+                </StackLayout>
+
+                <Frame
+                    Margin="50,0,50,20"
+                    Padding="-1"
+                    BackgroundColor="Gray" 
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="EndAndExpand"            
+                    CornerRadius="25"
+                    HasShadow="True">
+                    <Button BackgroundColor="Transparent" Text="Add into bookshelf" Clicked="Button_Clicked"></Button>
+                </Frame>
+            </StackLayout>
+        </Frame>
+
+        <StackLayout 
+                BackgroundColor="DimGray"
+                 Margin="0"  
+                 Padding="0"
+                 VerticalOptions="End"
+                 HorizontalOptions="FillAndExpand" 
+                 Orientation="Horizontal">
+            <StackLayout 
+                Padding="0"
+                Margin="0"
+                HorizontalOptions="FillAndExpand">
+                <ImageButton 
+                        Clicked="BooksButton_Clicked"
+                        Margin="2,0,0,0"
+                        Source="books"
+                        Padding="1,1,0,1"
+                        BackgroundColor="Transparent"
+                        WidthRequest="{OnPlatform iOS=43, Android=36}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"></ImageButton>
+                <Label TextColor="White" Margin="0,0,0,6" VerticalOptions="End" HorizontalOptions="Center" FontSize="Small" Text="List Books"></Label>
+            </StackLayout>
+            <StackLayout 
+                Padding="0"
+                Margin="0"
+                HorizontalOptions="FillAndExpand">
+                <ImageButton 
+                        Clicked="AddBookButton_Clicked"
+                        Source="addbook"
+                        Padding="0,1,0,1"
+                        BackgroundColor="Transparent"
+                        WidthRequest="{OnPlatform iOS=43, Android=36}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"></ImageButton>
+                <Label TextColor="White" Margin="0,0,0,6" VerticalOptions="End" HorizontalOptions="Center" FontSize="Small" Text="Add Books"></Label>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

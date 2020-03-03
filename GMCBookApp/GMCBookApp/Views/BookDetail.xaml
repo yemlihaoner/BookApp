@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+             NavigationPage.HasNavigationBar="false"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GMCBookApp"
+             x:Class="GMCBookApp.BookDetail">
+
+    <StackLayout HorizontalOptions="Fill" 
+                 Spacing="0"
+                 Padding="0"
+                 Margin="0"
+                 BackgroundColor="Wheat" 
+                 VerticalOptions="Fill"
+                 Orientation="Vertical">
+        <Frame 
+            Margin="8"
+            Padding="0"
+            BackgroundColor="White"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"            
+            CornerRadius="8"
+            HasShadow="True">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                
+                 <Frame   
+                      Grid.ColumnSpan="2"
+                      Grid.RowSpan="2"
+                      Grid.Column="0"
+                      Grid.Row="0"
+                      Margin="10,160,10,80"
+                      Padding="20,10,20,10"
+                      BackgroundColor="Wheat"
+                      BorderColor="Black" 
+                      CornerRadius="25"
+                      HasShadow="True">
+                    <StackLayout>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"></RowDefinition>
+                                <RowDefinition Height="40"></RowDefinition>
+                                <RowDefinition Height="40"></RowDefinition>
+                                <RowDefinition Height="40"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="4*"></ColumnDefinition>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Label FontAttributes="Bold" x:Name="bookName" Grid.Column="0" Grid.Row="0"/>
+                            <Label x:Name="writerName" Grid.Column="0" Grid.Row="1"/>
+                            <StackLayout Grid.Column="0" Grid.Row="2"  Orientation="Horizontal">
+                                <Label Text="Year: "/>
+                                <Label x:Name="year"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Grid.Row="2" Orientation="Horizontal">
+                                <Label Text="Price: "/>
+                                <Label x:Name="price"/>
+                            </StackLayout>
+                            <ImageButton
+                                Clicked="OpenPDF_Clicked"
+                                 Source="details"
+                                 BackgroundColor="Transparent"
+                                 WidthRequest="{OnPlatform iOS=43, Android=36}"
+                                 Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"></ImageButton>
+                        </Grid>
+                        <Frame
+                                Margin="50,0,50,30"
+                                Padding="-1"
+                                BackgroundColor="Gray" 
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="EndAndExpand"           
+                                CornerRadius="25"
+                                HasShadow="True">
+                            <Button BackgroundColor="Transparent" Text="Delete Book" Clicked="DeleteBook_Clicked"></Button>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+
+
+                <ImageButton                         
+                    Clicked="BackButton_Clicked"
+                    Margin="6,6,9,9"
+                    Padding="3"
+                    CornerRadius="30" 
+                    Source="back"
+                    BackgroundColor="Black"
+                    WidthRequest="{OnPlatform iOS=36, Android=30}"
+                    Grid.Column="0"
+                    Grid.Row="0">
+                </ImageButton>
+            </Grid>
+        </Frame>
+
+        <StackLayout 
+                BackgroundColor="DimGray"
+                 Margin="0"  
+                 Padding="0"
+                 VerticalOptions="End"
+                 HorizontalOptions="FillAndExpand" 
+                 Orientation="Horizontal">
+            <StackLayout 
+                Padding="0"
+                Margin="0"
+                HorizontalOptions="FillAndExpand">
+                <ImageButton 
+                        Clicked="BooksButton_Clicked"
+                        Margin="2,0,0,0"
+                        Source="books"
+                        Padding="1,1,0,1"
+                        BackgroundColor="Transparent"
+                        WidthRequest="{OnPlatform iOS=43, Android=36}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"></ImageButton>
+                <Label TextColor="White" Margin="0,0,0,6" VerticalOptions="End" HorizontalOptions="Center" FontSize="Small" Text="List Books"></Label>
+            </StackLayout>
+            <StackLayout 
+                Padding="0"
+                Margin="0"
+                HorizontalOptions="FillAndExpand">
+                <ImageButton 
+                        Clicked="AddBookButton_Clicked"
+                        Source="addbook"
+                        Padding="0,1,0,1"
+                        BackgroundColor="Transparent"
+                        WidthRequest="{OnPlatform iOS=43, Android=36}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"></ImageButton>
+                <Label TextColor="White" Margin="0,0,0,6" VerticalOptions="End" HorizontalOptions="Center" FontSize="Small" Text="Add Books"></Label>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

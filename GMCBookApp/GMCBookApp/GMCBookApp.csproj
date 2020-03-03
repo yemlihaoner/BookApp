@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Plugin.Permissions" Version="5.0.0-beta" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
+    <PackageReference Include="Syncfusion.Xamarin.Pdf" Version="17.3.0.34" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.3.0.34" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPdfViewer" Version="17.3.0.34" />
+    <PackageReference Include="Xam.Plugin.Media" Version="4.4.7-beta" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.3.6" />
+    <PackageReference Include="Xamarin.Plugin.FilePicker" Version="2.1.34" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v8.1\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\OpenPDF.xaml.cs">
+      <DependentUpon>OpenPDF.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AddBook.xaml.cs">
+      <DependentUpon>AddBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\BookDetail.xaml.cs">
+      <DependentUpon>BookDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Mainpage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
