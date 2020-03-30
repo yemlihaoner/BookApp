@@ -1183,11 +1183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj",
+      "projectUniqueName": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj",
       "projectName": "GMCBookApp",
-      "projectPath": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj",
+      "projectPath": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj",
       "packagesPath": "C:\\Users\\Yemliha\\.nuget\\packages\\",
-      "outputPath": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp\\obj\\",
+      "outputPath": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -1272,7 +1272,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

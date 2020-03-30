@@ -1,5 +1,6 @@
 C:\Users\Yemliha\source\repos\GMCBookApp\GMCBookApp\GMCBookApp.iOS\bin\iPhoneSimulator\Debug\GMCBookApp.iOS.exe
 C:\Users\Yemliha\source\repos\GMCBookApp\GMCBookApp\GMCBookApp.iOS\bin\iPhoneSimulator\Debug\GMCBookApp.iOS.pdb
+C:\Users\Yemliha\source\repos\GMCBookApp\GMCBookApp\GMCBookApp.iOS\bin\iPhoneSimulator\Debug\GMCBookApp.dll.mdb
 C:\Users\Yemliha\source\repos\GMCBookApp\GMCBookApp\GMCBookApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.dll
 C:\Users\Yemliha\source\repos\GMCBookApp\GMCBookApp\GMCBookApp.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.pdb
 C:\Users\Yemliha\source\repos\GMCBookApp\GMCBookApp\GMCBookApp.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll

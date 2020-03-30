@@ -1929,11 +1929,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp.Android\\GMCBookApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp.Android\\GMCBookApp.Android.csproj",
       "projectName": "GMCBookApp.Android",
-      "projectPath": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp.Android\\GMCBookApp.Android.csproj",
+      "projectPath": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp.Android\\GMCBookApp.Android.csproj",
       "packagesPath": "C:\\Users\\Yemliha\\.nuget\\packages\\",
-      "outputPath": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1954,8 +1954,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj": {
-              "projectPath": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj"
+            "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj": {
+              "projectPath": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj"
             }
           }
         }

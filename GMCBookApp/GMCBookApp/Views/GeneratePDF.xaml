@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    NavigationPage.HasNavigationBar="false"         
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GMCBookApp"
+    x:Class="GMCBookApp.Views.GeneratePDF">
+    <ContentPage.Content>
+        <StackLayout 
+            HorizontalOptions="Fill" 
+            Spacing="0"
+            Padding="0"
+            Margin="0"
+            BackgroundColor="Wheat" 
+            VerticalOptions="Fill"
+            Orientation="Vertical">
+            <Frame 
+            Margin="8"
+            Padding="0"
+            BackgroundColor="White"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"            
+            CornerRadius="8"
+            HasShadow="True">
+                <StackLayout Margin="0"
+                             Padding="0">
+                    <Frame
+                        BackgroundColor="Wheat"
+                        Margin="10"
+                        Padding="4"
+                        BorderColor="Black"
+                        HorizontalOptions="FillAndExpand"
+                        CornerRadius="25"
+                        HasShadow="True">
+                        <StackLayout
+                            Margin="0"
+                            Padding="0">
+                            <Frame
+                                BackgroundColor="White"
+                                Margin="20,3,20,3"
+                                Padding="3"
+                                HeightRequest="35"
+                                BorderColor="Black"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="CenterAndExpand"
+                                CornerRadius="25"
+                                HasShadow="True">
+                                <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="18" x:Name="gallerylabel"></Label>
+                            </Frame>
+                            <CollectionView 
+                                SelectionMode="Single"
+                                SelectionChanged="Item_Selected"
+                                x:Name="listView"
+                                ItemsLayout="HorizontalList"
+                                Margin="10,5,10,5"
+                                HeightRequest="190">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Frame   
+                                             CornerRadius="20"
+                                             BorderColor="Black"
+                                             BackgroundColor="Transparent"
+                                             HeightRequest="180"
+                                             IsClippedToBounds="True"
+                                             Padding="0">
+                                            <Image WidthRequest="130" Aspect="Fill" VerticalOptions="Center" HorizontalOptions="Center" Source="{Binding Path}"></Image>
+                                        </Frame>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame   
+                      Margin="8,40,8,40"
+                      Padding="17,10,17,10"
+                      BackgroundColor="Wheat"
+                      BorderColor="Black" 
+                      CornerRadius="25"
+                      HasShadow="True">
+                        <StackLayout>
+                            <StackLayout Margin="0" Padding="0" Orientation="Horizontal">
+                                <Frame
+                                Margin="8,7,3,5"
+                                Padding="18,-2,18,-2"
+                                BorderColor="Black"
+                                BackgroundColor="LightGray" 
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="Fill"            
+                                CornerRadius="25"
+                                HasShadow="True">
+
+                                    <Button TextColor="White" BackgroundColor="Transparent" Text="via Gallery" Clicked="Add_via_Gallery_Clicked"></Button>
+                                </Frame>
+                                <Frame
+                                Margin="3,7,8,5"
+                                Padding="18,-2,18,-2"
+                                BorderColor="Black"
+                                BackgroundColor="LightGray" 
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="Fill"            
+                                CornerRadius="25"
+                                HasShadow="True">
+                                    <Button TextColor="White" BackgroundColor="Transparent" Text="via Camera" Clicked="Add_via_Camera_Clicked"></Button>
+                                </Frame>
+
+                            </StackLayout>
+
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+
+            <StackLayout 
+                BackgroundColor="DimGray"
+                 Margin="0"  
+                 Padding="0,4,0,0"
+                 VerticalOptions="End"
+                 HorizontalOptions="FillAndExpand" 
+                 Orientation="Horizontal">
+                <StackLayout 
+                Padding="0"
+                Margin="0"
+                HorizontalOptions="FillAndExpand">
+                    <ImageButton 
+                        x:Name="backbutton"
+                        Clicked="Go_Back_Clicked"
+                        Margin="2,0,0,0"
+                        Source="cancel"
+                        Padding="1,1,0,1"
+                        BackgroundColor="Transparent"
+                        WidthRequest="{OnPlatform iOS=43, Android=36}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"></ImageButton>
+                    <Label TextColor="White" Margin="0,0,0,6" VerticalOptions="End" HorizontalOptions="Center" FontSize="Small" Text="Cancel"></Label>
+                </StackLayout>
+                <StackLayout 
+                Padding="0"
+                Margin="0"
+                HorizontalOptions="FillAndExpand">
+                    <ImageButton 
+                        Clicked="Generate_and_Publish_Clicked"
+                        Source="generator"
+                        Padding="0,1,0,1"
+                        BackgroundColor="Transparent"
+                        WidthRequest="{OnPlatform iOS=43, Android=36}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"></ImageButton>
+                    <Label TextColor="White" Margin="0,0,0,6" VerticalOptions="End" HorizontalOptions="Center" FontSize="Small" Text="Generate"></Label>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

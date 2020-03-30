@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp.iOS\\GMCBookApp.iOS.csproj": {}
+    "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp.iOS\\GMCBookApp.iOS.csproj": {}
   },
   "projects": {
-    "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp.iOS\\GMCBookApp.iOS.csproj": {
+    "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp.iOS\\GMCBookApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp.iOS\\GMCBookApp.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp.iOS\\GMCBookApp.iOS.csproj",
         "projectName": "GMCBookApp.iOS",
-        "projectPath": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp.iOS\\GMCBookApp.iOS.csproj",
+        "projectPath": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp.iOS\\GMCBookApp.iOS.csproj",
         "packagesPath": "C:\\Users\\Yemliha\\.nuget\\packages\\",
-        "outputPath": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp.iOS\\obj\\",
+        "outputPath": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj": {
-                "projectPath": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj"
+              "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj": {
+                "projectPath": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj": {
+    "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj",
+        "projectUniqueName": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj",
         "projectName": "GMCBookApp",
-        "projectPath": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj",
+        "projectPath": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp\\GMCBookApp.csproj",
         "packagesPath": "C:\\Users\\Yemliha\\.nuget\\packages\\",
-        "outputPath": "D:\\GMC_Files\\GMCBook\\GMCBookApp(24Aralık10.46)\\GMCBookApp\\GMCBookApp\\obj\\",
+        "outputPath": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -161,7 +161,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

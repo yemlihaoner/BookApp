@@ -103,11 +103,9 @@
                     HasShadow="True">
                     <Button TextColor="White" BackgroundColor="Transparent" Text="Import PDF" Clicked="PDFImport_Clicked"></Button>
                 </Frame>
-                <Label TextColor="Black" HorizontalOptions="Center" Text="Or create pdf"></Label>
-
-                <StackLayout Margin="0" Padding="0" Orientation="Horizontal">
-                    <Frame
-                    Margin="10,7,3,5"
+                <Label TextColor="Black" HorizontalOptions="Center" Text="~~~~~  Or  ~~~~"></Label>
+                <Frame
+                    Margin="20,5,20,7"
                     Padding="22,-2,22,-2"
                     BorderColor="Black"
                     BackgroundColor="LightGray" 
@@ -115,22 +113,8 @@
                     VerticalOptions="Fill"            
                     CornerRadius="25"
                     HasShadow="True">
-
-                        <Button TextColor="White" BackgroundColor="Transparent" Text="via Images" Clicked="PDFCreateviaGalery_Clicked"></Button>
-                    </Frame>
-                    <Frame
-                    Margin="3,7,10,5"
-                    Padding="22,-2,22,-2"
-                    BorderColor="Black"
-                    BackgroundColor="LightGray" 
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="Fill"            
-                    CornerRadius="25"
-                    HasShadow="True">
-                        <Button TextColor="White" BackgroundColor="Transparent" Text="via Camera" Clicked="PDFCreateviaCamera_Clicked"></Button>
-                    </Frame>
-
-                </StackLayout>
+                    <Button TextColor="White" BackgroundColor="Transparent" Text="Generate PDF" Clicked="PDFCreate_Clicked"></Button>
+                </Frame>
 
                 <Frame
                     Margin="50,0,50,20"

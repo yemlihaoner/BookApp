@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "otU+g4BcWOg0XPu0DcmH+vDmBE/97ZlfALVUVHsx1Ua62lca+213XODZCUkWhtOFzwovn+C666Hcy2Ki7MzRvA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Yemliha\\Documents\\GitHub\\PDF-Maker---BookApp\\GMCBookApp\\GMCBookApp.iOS\\GMCBookApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yemliha\\.nuget\\packages\\plugin.permissions\\5.0.0-beta\\plugin.permissions.5.0.0-beta.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\sqlite-net-pcl\\1.6.292\\sqlite-net-pcl.1.6.292.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.13\\sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\sqlitepclraw.core\\1.1.13\\sqlitepclraw.core.1.1.13.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\sqlitepclraw.provider.sqlite3.ios_unified\\1.1.13\\sqlitepclraw.provider.sqlite3.ios_unified.1.1.13.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\syncfusion.licensing\\17.3.0.34\\syncfusion.licensing.17.3.0.34.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\syncfusion.xamarin.compression\\17.3.0.34\\syncfusion.xamarin.compression.17.3.0.34.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\syncfusion.xamarin.core\\17.3.0.34\\syncfusion.xamarin.core.17.3.0.34.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\syncfusion.xamarin.datasource\\17.3.0.34\\syncfusion.xamarin.datasource.17.3.0.34.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\syncfusion.xamarin.gridcommon\\17.3.0.34\\syncfusion.xamarin.gridcommon.17.3.0.34.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\syncfusion.xamarin.pdf\\17.3.0.34\\syncfusion.xamarin.pdf.17.3.0.34.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\syncfusion.xamarin.sfbusyindicator\\17.3.0.34\\syncfusion.xamarin.sfbusyindicator.17.3.0.34.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\syncfusion.xamarin.sflistview\\17.3.0.34\\syncfusion.xamarin.sflistview.17.3.0.34.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\syncfusion.xamarin.sfpdfviewer\\17.3.0.34\\syncfusion.xamarin.sfpdfviewer.17.3.0.34.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\syncfusion.xamarin.sfprogressbar\\17.3.0.34\\syncfusion.xamarin.sfprogressbar.17.3.0.34.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\syncfusion.xamarin.sfrangeslider\\17.3.0.34\\syncfusion.xamarin.sfrangeslider.17.3.0.34.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\xam.plugin.media\\4.4.7-beta\\xam.plugin.media.4.4.7-beta.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\xamarin.forms.pancakeview\\1.3.6\\xamarin.forms.pancakeview.1.3.6.nupkg.sha512",
+    "C:\\Users\\Yemliha\\.nuget\\packages\\xamarin.plugin.filepicker\\2.1.34\\xamarin.plugin.filepicker.2.1.34.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using GMCBookApp.Models;
 using Plugin.FilePicker.Abstractions;
 using Plugin.FilePicker;
-using Plugin.Media;
 using System.IO;
-using Syncfusion.Pdf;
-using Syncfusion.Pdf.Graphics;
-using Syncfusion.Drawing;
-using Plugin.Media.Abstractions;
+using GMCBookApp.Views;
 
 namespace GMCBookApp
 {
@@ -69,6 +63,11 @@ namespace GMCBookApp
 
         private async void PDFImport_Clicked(object sender, EventArgs e)
         {
+            if(book.PDF != null)
+            {
+                bool answer = await DisplayAlert("PDf Warning", "PDF is already created, do you want to continue?","accept","cancel");
+                if (!answer) return; 
+            }
             await PDFImport_ClickedAsync();
         }
 
@@ -95,105 +94,28 @@ namespace GMCBookApp
             }
         }
 
-        private async void PDFCreateviaGalery_Clicked(object sender, EventArgs e)
-        {
-            await GaleryAsync();
-        }
-        private async void PDFCreateviaCamera_Clicked(object sender, EventArgs e)
-        {
-            await CameraAsync();
-        }
-        private async Task GaleryAsync()
-        {
-            if (!CrossMedia.Current.IsPickPhotoSupported)
-            {
-                DisplayAlert("Photos Not Supported", ":( Permission not granted to photos.", "OK");
-                return;
-            }
-            PdfDocument document = new PdfDocument();
-            //bool take_picture = true;
-            //while(take_picture)
-            //{
-                //var file = await MediaService.Instance.OpenMediaPickerAsync(MediaType.Image);
-                //var file = await Plugin.Media.CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
-                //{
-                //    PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium,
 
-                //});
-                //if (file == null) take_picture = false;
-                //else
-                //{
-                //    PdfPage page = document.Pages.Add();
-                //    PdfGraphics graphics = page.Graphics;
-                //    var imageStream = new MemoryStream();
-                //    file.GetStream().CopyTo(imageStream);
-                //    PdfBitmap image = new PdfBitmap(imageStream);
-                //    graphics.DrawImage(image, 0, 0);
-                //}
-            //}
-
-            List<MediaFile> file = await CrossMedia.Current.PickPhotosAsync(new PickMediaOptions
-            {
-                PhotoSize = PhotoSize.Medium
-            });
-            if(file != null)
-            {
-                foreach (MediaFile current_page in file)
-                {
-                    PdfPage page = document.Pages.Add();
-                    PdfGraphics graphics = page.Graphics;
-                    var imageStream = new MemoryStream();
-                    current_page.GetStream().CopyTo(imageStream);
-                    PdfBitmap image = new PdfBitmap(imageStream);
-                    graphics.DrawImage(image, 0, 0);
-                }
-            }
-            if (document.PageCount > 0)
-            {
-                MemoryStream stream = new MemoryStream();
-                document.Save(stream);
-                document.Close(true);
-                book.PDF = stream.ToArray();
-                if (book.PDF != null) pdf_clicked = true;
-            }
-        }
-
-        private async Task CameraAsync()
+        private async void PDFCreate_Clicked(object sender, EventArgs e)
         {
-            if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+            if (book.PDF != null)
             {
-                DisplayAlert("No Camera", ":( No camera available.", "OK");
-                return;
+                bool answer = await DisplayAlert("PDf Warning", "PDF is already created, do you want to continue?", "accept", "cancel");
+                if (!answer) return;
             }
-            PdfDocument document = new PdfDocument();
-            bool take_picture = true;
-            while (take_picture)
-            {
-                var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions {
-                    PhotoSize = PhotoSize.MaxWidthHeight,
-                    AllowCropping = true,
-                    MaxWidthHeight = 700,
-                    SaveToAlbum = false,
-                    DefaultCamera = CameraDevice.Rear});
+            await PDFCreate_ClickedAsync();
+        } 
 
-                if (file == null)   take_picture = false;
-                else
-                {
-                    PdfPage page = document.Pages.Add();
-                    PdfGraphics graphics = page.Graphics;
-                    var imageStream = new MemoryStream();
-                    file.GetStream().CopyTo(imageStream);
-                    PdfBitmap image = new PdfBitmap(imageStream);
-                    graphics.DrawImage(image, 0, 0);
-                }
-            }
-            if (document.PageCount > 0)
+        private async Task PDFCreate_ClickedAsync()
+        {
+            try
             {
-                MemoryStream stream = new MemoryStream();
-                document.Save(stream);
-                document.Close(true);
-                book.PDF = stream.ToArray();
-                if (book.PDF != null) pdf_clicked = true;
+                pdf_clicked = true;
+                await Navigation.PushAsync(new GeneratePDF(book), false);
+            }
+            catch (Exception ex)
+            {
+                pdf_clicked = false;
+                System.Console.WriteLine("Exception generating file: " + ex.ToString());
             }
         }
 
